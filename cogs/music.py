@@ -306,18 +306,6 @@ class Music(commands.Cog):
                 await ctx.send(
                     "請先加入語音頻道")
 
-    @commands.command()
-    @commands.guild_only()
-    async def musicinfo(self, ctx):
-        """機器人資訊及重要訊息公告"""
-        embed = discord.Embed(title="Jetta音樂機器人資訊")
-        embed.add_field(name="目前版本", value="1.0正式版還是會更新這不代表機器人會永遠不更新", inline=True)
-        embed.add_field(name="使用", value="Discord.py", inline=True)
-        embed.add_field(name="來源:", value="[來源代碼](https://bot.pickname.repl.co/)", inline=True)
-        embed.add_field(name="製作者", value="博士助理#9099和AD#5438", inline=True)
-        embed.add_field(name="機器人的重要訊息公告", value="機器人最近可能會頻繁的下線做維護請大家多多見諒")
-        embed.add_field(name="開發團隊的所有成員", value="繪圖及總監製作過程:博士助理#9099,不知道做做什麼的:黃楷衽#3303,主要程式編寫:AD#5438", inline=True)
-        embed.add_field(name="製作人的話", value="其實我原本是不想做的但看到很多的音樂機器人都被版權吃掉了我覺得音樂是我們的一部份而且跟朋友使用Discord通話時沒有音樂也覺得很無聊所以我才開始用功徐好程式語言來幫家用Discord和朋友通話時也可以聽到音樂不需要吃自己電腦的效能就可以聽音樂", inline=True)
             
         await ctx.send(embed=embed)
             
