@@ -7,7 +7,7 @@ class Main(commands.Cog, description="雜項"):
 
     @commands.command()
     async def ping(self, ctx):
-        """機器人的延遲"""
+        """bot ping"""
         await ctx.send(f"{round(self.bot.latency*1000)} ms")
 
 def setup(bot):
