@@ -13,6 +13,7 @@ bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
 async def on_ready():
 	print('> 啟動的機器人是：', bot.user)
 	print('機器人成功載入資料可以聽音樂了')
+  primt('本代碼由博士助理_YT#9099創作請勿擅自進行更改')
 @bot.command()
 async def load(ctx, extension):
   """開發者專用"""
