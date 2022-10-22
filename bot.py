@@ -12,8 +12,9 @@ bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
 #當機器人完成啟動時
 async def on_ready():
 	print('> 啟動的機器人是：', bot.user)
-	print('機器人成功載入資料可以聽音樂了')
-  primt('本代碼由博士助理_YT#9099創作請勿擅自進行更改')
+	print('機器人成功載入資料')
+  print('本代碼由博士助理_YT#9099創作請勿擅自進行更改')
+  print('bot is online')
 @bot.command()
 async def load(ctx, extension):
   """開發者專用"""
@@ -23,7 +24,7 @@ async def load(ctx, extension):
 	  await ctx.send(f'載入{extension}完成')
   else:
     await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
-
+    
 @bot.command()
 async def unload(ctx, extension):
   """開發者專用"""
