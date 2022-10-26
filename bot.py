@@ -1,11 +1,11 @@
-import discord
+ import discord
 from discord import Intents
 from discord.ext import commands
 from pretty_help import PrettyHelp
 
 owners = [使用者ID]
 activity = discord.Activity(type=discord.ActivityType.playing, name="可以改")
-bot = commands.Bot(command_prefix="你要的前奏, activity=activity, owner_ids = set(owners), intents=Intents.all())
+bot = commands.Bot(command_prefix="你要的前奏", activity=activity, owner_ids = set(owners), intents=Intents.all())
 ending_note = "可以改"
 bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
 @bot.event
