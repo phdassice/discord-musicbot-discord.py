@@ -21,7 +21,7 @@ async def load(ctx, extension):
 	  bot.load_extension(f'cogs.{extension}')
 	  await ctx.send(f'載入{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("你沒權限喔")
     
 @bot.command()
 async def unload(ctx, extension):
@@ -31,7 +31,7 @@ async def unload(ctx, extension):
 	  bot.unload_extension(f'cogs.{extension}')
 	  await ctx.send(f'卸載{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("你沒權限喔")
 
 @bot.command()
 async def reload(ctx, extension):
@@ -41,7 +41,7 @@ async def reload(ctx, extension):
 	  bot.reload_extension(f'cogs.{extension}')
 	  await ctx.send(f'重新載入{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("你沒權限喔")
 
 @bot.command()
 async def reloadall(ctx):
@@ -54,7 +54,7 @@ async def reloadall(ctx):
         bot.reload_extension(f"cogs.{name}")
     await ctx.send("重新載入成功")
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("你沒權限喔")
 
 for Filename in os.listdir('./cogs'):
 	if Filename.endswith('.py'):
