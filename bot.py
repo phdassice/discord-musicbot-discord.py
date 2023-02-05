@@ -12,7 +12,7 @@ bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
 #當機器人完成啟動時
 async def on_ready():
 	print('> 啟動的機器人是：', bot.user)
-	print('機器人成功載入資料')
+	print('load done bot now running')
 @bot.command()
 async def load(ctx, extension):
   """開發者專用"""
