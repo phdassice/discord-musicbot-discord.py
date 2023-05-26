@@ -3,6 +3,24 @@ from discord import Intents
 from discord.ext import commands
 from pretty_help import PrettyHelp
 
+print('  ___  __    _______   ___      ___ ___  ________       ')
+
+print(' |\  \|\  \ |\  ___ \ |\  \    /  /|\  \|\   ___  \     ')
+
+print(' \ \  \/  /|\ \   __/|\ \  \  /  / | \  \ \  \\\ \  \    ')
+
+print('  \ \   ___  \ \  \_|/_\ \  \/  / / \ \  \ \  \\\ \  \   ')
+
+print('   \ \  \\\ \  \ \  \_|\ \ \    / /   \ \  \ \  \\\ \  \  ')
+
+print('    \ \__\\\ \__\ \_______\ \__/ /     \ \__\ \__\\\ \__\ ')
+
+print('     \|__| \|__|\|_______|\|__|/       \|__|\|__| \|__| ')
+
+print()
+
+print('BY博士助理_YT#9099')
+
 owners = [使用者ID]
 activity = discord.Activity(type=discord.ActivityType.playing, name="可以改")
 bot = commands.Bot(command_prefix="你要的前奏", activity=activity, owner_ids = set(owners), intents=Intents.all())
